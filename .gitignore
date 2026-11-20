@@ -1,0 +1,65 @@
+## ===================================================================
+## Root .gitignore for IT Service Desk Ticketing System (.NET + React)
+## ===================================================================
+
+# -----------------------
+# Sensitive Local Data & DBs (CRITICAL FOR PUBLIC REPOS)
+# -----------------------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+app.db
+Uploads/
+uploads/
+
+# -----------------------
+# .NET Build Output & Cache
+# -----------------------
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vs/
+.vscode/
+.idea/
+
+# -----------------------
+# Node / Frontend Artifacts
+# -----------------------
+node_modules/
+ITServiceDesk.Client/node_modules/
+ITServiceDesk.Client/dist/
+dist/
+build/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------
+# Environment Secrets & Overrides
+# -----------------------
+.env
+.env.local
+.env.*.local
+*.local.json
+appsettings.Production.json
+
+# -----------------------
+# Operating System Files
+# -----------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.log
